@@ -8,9 +8,10 @@ import { OrdersModule } from './orders/orders.module';
 import { FilterPipe } from './filter.pipe';
 import { CopyrightDirective } from './copyright.directive';
 import { NumericDirective } from './numeric.directive';
+import { PermissionDirective } from './permission.directive';
 
 @NgModule({
-  declarations: [AppComponent, CopyrightDirective, CopyrightDirective, NumericDirective],
+  declarations: [AppComponent, CopyrightDirective, CopyrightDirective, NumericDirective, PermissionDirective],
   imports: [BrowserModule, ProductsModule, OrdersModule, FilterPipe],
   providers: [],
   bootstrap: [AppComponent],

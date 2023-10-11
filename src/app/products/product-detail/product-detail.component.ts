@@ -40,9 +40,9 @@ export class ProductDetailComponent implements OnInit,OnChanges, AfterViewInit{
   buy(){
     this.bought.emit();    
   }
-  // get productName(){
-  //   console.log(`pobierz ${this.name}`)
-  //   return this.name
-  // }
+  get productName():string{
+    console.log(`pobierz ${this.productName}`)
+    return this.productName
+  }
   
 }

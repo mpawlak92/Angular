@@ -1,12 +1,13 @@
 <ng-template #noProduct>
     <p *ngIf="!selectedProduct">{{today | date:'fullDate'}}</p>
 </ng-template>
+
 <h2>Product List</h2>
+
 <ul>
     <li *ngFor="let product of products | slice: 0:1" (click)="selectedProduct=product">
         <!-- {{product.name | lowercase}} -->
         {{product.name | uppercase}}
-
     </li>
 </ul>
 <app-product-detail *ngIf="selectedProduct; else noProduct" [product]="selectedProduct" (bought)="onBuy()">

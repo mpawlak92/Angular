@@ -5,9 +5,13 @@ import { AppComponent } from './app.component';
 import { ProductsModule } from './products/products.module';
 import { OrdersModule } from './orders/orders.module';
 
+import { FilterPipe } from './filter.pipe';
+import { CopyrightDirective } from './copyright.directive';
+import { NumericDirective } from './numeric.directive';
+
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, ProductsModule, OrdersModule],
+  declarations: [AppComponent, CopyrightDirective, CopyrightDirective, NumericDirective],
+  imports: [BrowserModule, ProductsModule, OrdersModule, FilterPipe],
   providers: [],
   bootstrap: [AppComponent],
 })

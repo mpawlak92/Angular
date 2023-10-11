@@ -9,10 +9,11 @@ import { FilterPipe } from './filter.pipe';
 import { CopyrightDirective } from './copyright.directive';
 import { NumericDirective } from './numeric.directive';
 import { PermissionDirective } from './permission.directive';
+import { AutofocusDirective } from './autofocus.directive';
 
 @NgModule({
   declarations: [AppComponent, CopyrightDirective, CopyrightDirective, NumericDirective, PermissionDirective],
-  imports: [BrowserModule, ProductsModule, OrdersModule, FilterPipe],
+  imports: [BrowserModule, ProductsModule, OrdersModule, FilterPipe, AutofocusDirective],
   providers: [],
   bootstrap: [AppComponent],
 })

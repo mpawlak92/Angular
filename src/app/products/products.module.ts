@@ -4,10 +4,12 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductHostDirective } from './product-host.directive';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { ProductViewComponent } from './product-view/product-view.component';
 
 
 @NgModule({
-  declarations: [ProductListComponent, ProductDetailComponent, ProductHostDirective],
+  declarations: [ProductListComponent, ProductDetailComponent, ProductHostDirective, FavoritesComponent, ProductViewComponent],
   imports: [CommonModule, ProductComponent],
   exports: [ProductListComponent],
 })

@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductHostDirective } from './product-host.directive';
 
 
 @NgModule({
-  declarations: [ProductListComponent, ProductDetailComponent],
+  declarations: [ProductListComponent, ProductDetailComponent, ProductHostDirective],
   imports: [CommonModule, ProductComponent],
   exports: [ProductListComponent],
 })

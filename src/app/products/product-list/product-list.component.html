@@ -12,3 +12,6 @@
 </ul>
 <app-product-detail *ngIf="selectedProduct; else noProduct" [product]="selectedProduct" (bought)="onBuy()">
 </app-product-detail>
+
+<h3>Oferty</h3>
+<ng-template appProductHost></ng-template>
